@@ -1,5 +1,5 @@
 # CoachCompanionApp
-Python/SQLIte Coaching Scheduling App
+Python/SQLIte Coach's Scheduling App
 
 The purpose of this repository is to house the code for an app that I started working on at the request of my wife when she was thrust into the position of coaching my 4-year-old son's tee-ball team.  When I started working on it I had virtually no knowledge of Python or Kotlin.  I have some formal and hobbyist knowledge of most of the other big OOP languages (i.e. Java, C++, .NET, JavaScript, etc.).  I also have both formal and hobbyist knowledge of SQL, and I understood that SQLite was probably the quickest and easiest way for me to get up and running with some usable code.  
 
