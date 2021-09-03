@@ -6,7 +6,7 @@
 import sqlite3
 from sqlite3 import Error
 
-def create_connection(db_file):
+def CreateConnection(db_file):
     """ create a database connection to the SQLite database
         specified by db_file
     :param db_file: database file
@@ -21,7 +21,7 @@ def create_connection(db_file):
 
     return conn
 
-def create_table(conn, create_table_sql):
+def CreateTable(conn, create_table_sql):
     """ create a table from the create_table_sql statement
     :param conn: Connection object
     :param create_table_sql: a CREATE TABLE statement
@@ -152,30 +152,30 @@ def main():
                                         );"""
 
     # create a database connection
-    conn = create_connection(database)
+    conn = CreateConnection(database)
 
     # If a connection exists, create the below tables
     if conn is not None:
         # create games table
-        create_table(conn, sql_create_games_table)
+        CreateTable(conn, sql_create_games_table)
 
         # create players table
-        create_table(conn, sql_create_players_table)
+        CreateTable(conn, sql_create_players_table)
         
         # create positions table
-        create_table(conn, sql_create_positions_table)
+        CreateTable(conn, sql_create_positions_table)
         
         # create schedule table
-        create_table(conn, sql_create_schedule_table)
+        CreateTable(conn, sql_create_schedule_table)
         
         # create innings table
-        create_table(conn, sql_create_innings_table)
+        CreateTable(conn, sql_create_innings_table)
         
         # create positionCounters table
-        create_table(conn, sql_create_positionCounters_table)
+        CreateTable(conn, sql_create_positionCounters_table)
         
         # create temp counters table
-        create_table(conn, sql_create_tempCounters_table)
+        CreateTable(conn, sql_create_tempCounters_table)
     
     # If no connection to database, print error message to the console
     else:
