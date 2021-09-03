@@ -6,7 +6,7 @@
 import sqlite3
 from sqlite3 import Error
 
-def create_connection(db_file):
+def CreateConnection(db_file):
     """ create a database connection to a SQLite database """
     
     conn = None
@@ -25,4 +25,4 @@ if __name__ == '__main__':
     
     # Call to the create connectio function passing the database path; if the filename does not
     # exist then the program automatically creates a new database with the specified file name
-    create_connection(r"C:\sqlite\db\t_ball_db.db")
+    CreateConnection(r"C:\sqlite\db\t_ball_db.db")
